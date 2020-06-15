@@ -5,6 +5,7 @@
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
 
@@ -27,12 +28,25 @@
 				<div class="landingWrapper">
 					<div class="nav">
 						<a href="#"><img src="images/logo.png" alt="logo" class="logo"></a>
-						<div class="pages">
+						<div class="pages" id="pages">
 							<a href="#">Tour</a>
 							<a href="#">Blog</a>
 							<a href="#">Support</a>
 							<a href="#">Login</a>
+							<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+							    <i class="fa fa-bars"></i>
+							</a>
 						</div>
+						<script>
+							function myFunction() {
+							  var x = document.getElementById("pages");
+							  if (x.className === "pages") {
+							    x.className += " responsive";
+							  } else {
+							    x.className = "pages";
+							  }
+							}
+						</script>
 					</div>
 					<div class="landingContent">
 						<div class="contentLeft">
@@ -42,7 +56,7 @@
 						<div class="contentRight">
 							
 								<img src="images/game.png" alt="game" class="game">
-								<img src="images/game.png" alt="game" class="game2">
+								<img src="images/game2.png" alt="game" class="game2">
 							
 						</div>
 					</div>
@@ -64,12 +78,12 @@
 							<p>Set up your competations <br>teams and players.</p>
 						</div>
 						<div class="describe">
-							<img src="images/logo.png">
+							<img src="images/bar-chart.png">
 							<h2>Stats</h2>
 							<p>Do your own <br> basketball game stats easily.</p>
 						</div>
 						<div class="describe">
-							<img src="images/logo.png">
+							<img src="images/pdf.png">
 							<h2>Instant sharing</h2>
 							<p>Quickly export and share <br>your stats with everyone.</p>
 						</div>

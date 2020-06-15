@@ -42,7 +42,7 @@ html, body {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: url(../images/bg_1.jpg) center center;
+	background: url(../images/bg_1.png) center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
@@ -57,33 +57,49 @@ html, body {
 
 }
 h1 {
-	font-size: 48px;
-	margin-bottom: 18px;
+	font-family: Poppins;
+	font-size: 72px;
+	font-weight: normal;
+	color: #FAFAFA;
+	letter-spacing: 0;
+	word-spacing: 82;
+	margin-bottom: 40px;
 }
 
-a {
-	font-size: 16px;
-}
+
 
 .btn_download {
 	border: #FAB13A 2px solid;
-	color: #344955;
 	background-color: #FAB13A;
+	border-radius: 8px;
 	padding: 0.6em 1.75em;
 	text-align: center;
 	text-transform: uppercase;
-	font-weight: bold;
+	text-decoration: none;
+	font-family: Poppins;
+	font-weight: bolder;
+	font-size: 24px;
+	color: #2F424E;
+	letter-spacing: 30;
+	word-spacing: 30;
+	text-align: center;
 
 }
 
 .btn_download:hover {
 	border: #F9AA33 2px solid;
 	background-color: #F9AA33;
-	color: #344955;
 	padding: 0.6em 1.75em;
 	text-align: center;
 	text-transform: uppercase;
-	font-weight: bold;
+	text-decoration: none;
+	font-family: Poppins;
+	font-weight: bolder;
+	font-size: 24px;
+	color: #2F424E;
+	letter-spacing: 30;
+	word-spacing: 30;
+	text-align: center;
 	
 }
 
@@ -99,13 +115,40 @@ a {
 }
 .pages a {
 	text-decoration: none;
-	color: white;
+	color: #FAFAFA;
+    text-align: center;
+    font: Light 20px/30px Poppins;
+    letter-spacing: 0px;
 	margin-left: 25px;
 	vertical-align: middle;
 }
+
+.pages .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .pages a {display: none;}
+  .pages a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pages.responsive {position: relative;}
+  .pages.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .pages.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
 .logo {
-	width: 55px;
-	height: 45px;
 	vertical-align: middle;
 }
 .landingContent {
@@ -126,15 +169,11 @@ a {
 
 .game {
 	flex: 0 0 50%;
-	width: 260px;
-	height: 520px;
 	margin-top: -55px;
 }
 
 .game2 {
 	flex: 0 0 50%;
-	width: 260px;
-	height: 520px;
 	margin-top: -115px;
 	margin-left: 15px;
 }
@@ -185,18 +224,34 @@ a {
 
 .titleSecondSection {
 	flex: 0 0 50%;
-	padding-top: 200px;
+	padding-top: 110px;
 }
 
-.titleSecondSection h1, .titleSecondSection p {
-	color: #344955;
+.titleSecondSection h1 {
+	font-family: Poppins;
+	font-weight: bolder;
+	font-size: 48px;
+	color: #2F424E;
+	letter-spacing: 0;
+	word-spacing: 54;
 	text-align: center;
+}
+
+.titleSecondSection p {
+	font-family: Poppins;
+	font-weight: lighter;
+	font-size: 24px;
+	color: #2F424E;
+	letter-spacing: 0;
+	word-spacing: 35;
+	text-align: center;
+	margin-top: 10px;
 }
 
 .iconsAndDescribe {
 	position: relative;
 	width: 88%;
-	margin: 100px auto 100px auto;
+	margin: 48px auto 100px auto;
 	text-align: center;
 	flex: 0 0 50%;
 	display: flex;
@@ -208,10 +263,23 @@ a {
 }
 
 .describe h2 {
-	padding-top: 25px;
+	font-family: Poppins;
+	font-weight: bolder;
+	font-size: 32px;
+	color: #2F424E;
+	letter-spacing: 30;
+	word-spacing: 48;
+	text-align: center;
 }
 .describe p {
-	padding-top: 10px;
+	font-family: Poppins;
+	font-weight: lighter;
+	font-size: 24px;
+	color: #2F424E;
+	letter-spacing: 0;
+	word-spacing: 35;
+	text-align: center;
+	margin-top: 18px;
 }
 
 /*------Third-------*/
@@ -263,6 +331,8 @@ a {
 	display: flex;
 	justify-content: center;
     align-items: center;
+    box-shadow: 4px 4px #344955;
+
 }
 
 .rightContent {
@@ -271,7 +341,7 @@ a {
 	margin-top: 100px;
 	margin-left: 50px;
 	justify-content: center;
-    align-items: center;	
+    align-items: center;
 }
 
 .divoviNeki {
@@ -291,7 +361,9 @@ a {
 .rightContent .divoviNeki {
 	
 	border: #344955 2px solid;
+	border-radius: 16px;
 	background-color: white;
+	box-shadow: 2px 2px;
 }
 
 .leftContent p {
