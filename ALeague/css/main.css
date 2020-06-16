@@ -118,7 +118,7 @@ h1 {
 	text-decoration: none;
 	color: #FAFAFA;
     text-align: center;
-    font: Light 20px/30px Poppins;
+    font: Light 20px Poppins;
     letter-spacing: 0px;
 	margin-left: 25px;
 	vertical-align: middle;
@@ -127,7 +127,7 @@ h1 {
 	text-decoration: none;
 	color: #FAB13A;
     text-align: center;
-    font: Light 20px/30px Poppins;
+    font: Light 20px Poppins;
     letter-spacing: 0px;
 	margin-left: 25px;
 	vertical-align: middle;
@@ -265,14 +265,14 @@ h1 {
 }
 
 .imgIcon {
-    margin-top:20px;
+    margin-top:25px;
 
 }
 
 .medalIcon {
 	height: 46px;
 	width: 51px;
-	margin-top:20px;
+	margin-top:25px;
 }
 
 
@@ -285,9 +285,10 @@ h1 {
 	word-spacing: 48;
 	text-align: center;
 	margin-top: 40px;
+	text-transform: uppercase;
 }
 .describe p {
-	font: Light 24px/35px Poppins;
+	font: Light 24px Poppins;
 	color: #2F424E;
 	letter-spacing: 0;
 	word-spacing: 35;
@@ -338,7 +339,9 @@ h1 {
 .leftContent {
 	flex: 0 0 50%;
 	border: 1px solid #70707029;
-	background-color: #FAFAFA;
+	background: url(../images/bg_leftContent.jpg) center center;
+	background-size: cover;
+	background-repeat: no-repeat;
 	height: 470px;
 	margin-top: 100px;
 	display: flex;
@@ -479,12 +482,12 @@ h1 {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	margin: 100px 20% auto 20%;
+	margin: 78px 20% 100px 20%;
 
 }
 .inputForm .input {
 	flex: 0 0 80%;
-	border: #2F424E 1px solid;
+	border: #2F424E 2px solid;
 	border-radius: 8px;
 	height: 35px;
 	padding-left: 20px;
@@ -497,6 +500,7 @@ h1 {
 	flex: 0 0 20%;
 	border: #2F424E 1px solid;
 	background-color: #2F424E;
+	box-shadow: 0px 10px 20px #475B6633;
 	border-radius: 8px;
 	height: 47px;
 	padding: 5px;
@@ -529,15 +533,31 @@ h1 {
 .facebookDiv {
 	height: 100%;
 	width: 50%;
-	background-color: #E2EEF5;
+	background: transparent linear-gradient(181deg, var(--unnamed-color-dbedee) 0%, var(--unnamed-color-b6c8cc) 100%) 0% 0% no-repeat padding-box;
+	background: transparent linear-gradient(181deg, #DBEDEE 0%, #B6C8CC 100%) 0% 0% no-repeat padding-box;
+	opacity: 1;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
+.facebookDiv p{
+	color: #2F424E;
+	font:Regular 24px Poppins;
+	letter-spacing: 0.48px;
+
+}
+.instagramDiv p{
+	color: #DBEDEE;
+	font:Regular 24px Poppins;
+	letter-spacing: 0.48px;
+
+}
 .instagramDiv {
 	height: 100%;
 	width: 50%;
-	background-color: #344955;
+	background: transparent linear-gradient(180deg, var(--unnamed-color-475b66) 0%, var(--primary) 100%) 0% 0% no-repeat padding-box;
+	background: transparent linear-gradient(180deg, #475B66 0%, #2F424E 100%) 0% 0% no-repeat padding-box;
+	opacity: 1;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -634,7 +654,7 @@ h1 {
 
 .prvi p {
 	color: #FAFAFA;
-	font: Light 18px/28px Poppins;
+	font: Light 18px Poppins;
 	letter-spacing: 0.36px;
 	text-align: center;
 	margin-top: 46px;
@@ -642,7 +662,7 @@ h1 {
 }
 .footer p {
 	color: #FAFAFA;
-	font: Light 20px/28px Sofia Pro Soft;
+	font: Light 20px Sofia Pro Soft;
 	letter-spacing: 0.4px;
 	margin-top: 16px;
 	opacity: 0.5;
