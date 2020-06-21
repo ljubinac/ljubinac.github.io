@@ -4,7 +4,7 @@
     <title>A league</title>
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
 	<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -25,40 +25,27 @@
 
 	<div id="fullpage">
 		<div class="section">
-			<div class="landing">
-				<div class="landingWrapper">
+			<div class="first">
+				<div class="firstWrapper">
 					<div class="nav">
+						<input type="checkbox" id="check">
+						<label for="check" class="checkbtn"><i class="fa fa-bars"></i></label>
 						<a href="#"><img src="images/logo.png" alt="logo" class="logo"></a>
-						<div class="pages" id="pages">
-							<a href="#">Tour</a>
-							<a href="#">Blog</a>
-							<a href="#">Support</a>
-							<a href="#">Login</a>
-							<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-							    <i class="fa fa-bars"></i>
-							</a>
-						</div>
-						<script>
-							function myFunction() {
-							  var x = document.getElementById("pages");
-							  if (x.className === "pages") {
-							    x.className += " responsive";
-							  } else {
-							    x.className = "pages";
-							  }
-							}
-						</script>
+						<ul>
+							<li><a href="#">Tour</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Support</a></li>
+							<li><a href="#">Login</a></li>
+						</ul>
 					</div>
-					<div class="landingContent">
+					<div class="firstContent">
 						<div class="contentLeft">
 							<h1>Game Stats <br>Simplified</h1>
 							<a href="#" class="btn_download">Get the app</a>
 						</div>
 						<div class="contentRight">
-							
-								<img src="images/game.png" alt="game" class="game">
-								<img src="images/game2.png" alt="game" class="game2">
-							
+							<img src="images/game.png" alt="game" class="game">
+							<img src="images/game2.png" alt="game" class="game2">
 						</div>
 					</div>
 				</div>
@@ -66,8 +53,8 @@
 		</div>
 
 		<div class="section">
-			<div class="features">
-				<div class="featuresWrapper">
+			<div class="second">
+				<div class="secondWrapper">
 					<div class="titleSecondSection">
 						<h1>An easier way to do your own game stats</h1>
 						<p>A league makes it easy to do you basketball game stats <br>and export them instantly as a stylish PDF sheet.</p>
