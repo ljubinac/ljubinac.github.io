@@ -104,7 +104,7 @@ html, body {
 }
 .logo {
 	margin-top: 1em;
-	padding: 0 100px;
+	padding: 6px 100px;
 }
 
 .nav ul {
@@ -332,7 +332,7 @@ html, body {
 
 /* Second section end */
 
-/*------Third-------*/
+/* Third section start */
 
 .third {
 	position: relative;
@@ -365,12 +365,11 @@ html, body {
 
 }
 
-
-
 .thirdContent {
 	width: 88%;
 	margin: 0 auto 0 0;
 	display: flex;
+	height: 100vh;
 }
 .leftContent {
 	flex: 0 0 50%;
@@ -378,8 +377,8 @@ html, body {
 	background: url(../images/bg_leftContent.jpg) center center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 470px;
-	margin-top: 100px;
+	height: 80vh;
+	margin-top: 10vh;
 	display: flex;
 	justify-content: center;
     align-items: center;
@@ -390,7 +389,8 @@ html, body {
 .rightContent {
 	flex: 0 0 50%;
 	display: flex;
-	margin-top: 100px;
+	height: 80vh;
+	margin-top: 10vh;
 	margin-left: 50px;
 	justify-content: center;
     align-items: center;
@@ -437,18 +437,10 @@ html, body {
 	word-spacing: 46;
 }
 
-.leftContent p {
-	color: #2F424E;
-	text-align: left;
-	font-family: Poppins;
-	font-weight: normal;
-	font-size: 26px;
-	letter-spacing: 0;
-	word-spacing: 46;
-}
+/* Third section end */
 
 
-/*--------Fifth---------------*/
+/* Fifth section start */
 
 .fifth {
 	position: relative;
@@ -578,13 +570,17 @@ html, body {
 }
 .facebookDiv p{
 	color: #2F424E;
-	font:Regular 24px Poppins;
+	font-family: Poppins;
+	font-size: 24px;
+	font-style: normal;
 	letter-spacing: 0.48px;
 
 }
 .instagramDiv p{
 	color: #DBEDEE;
-	font:Regular 24px Poppins;
+	font-family: Poppins;
+	font-size: 24px;
+	font-style: normal;
 	letter-spacing: 0.48px;
 
 }
@@ -619,8 +615,10 @@ html, body {
   color: white;
 }
 
+/* Fifth section end */
 
-/*----------------Sixth------------------------*/
+
+/* Sixth section start */
 .sixth {
 	position: relative;
 	background-color: #000;
@@ -682,6 +680,7 @@ html, body {
 
 .prvi h3 {
 	color: #FAB13A;
+	font-family: Poppins;
 	font-size: 24px;
 	font-weight: 600;
 	letter-spacing: 0.48px;
@@ -690,7 +689,9 @@ html, body {
 
 .prvi p {
 	color: #FAFAFA;
-	font: Light 18px Poppins;
+	font-family: Poppins;
+	font-size: 18px;
+	font-weight: 400px;
 	letter-spacing: 0.36px;
 	text-align: center;
 	margin-top: 46px;
@@ -698,11 +699,15 @@ html, body {
 }
 .footer p {
 	color: #FAFAFA;
-	font: Light 20px Sofia Pro Soft;
+	font-family: Sofia Pro Soft;
+	font-size: 20px;
+	font-weight: 400px;
 	letter-spacing: 0.4px;
 	margin-top: 16px;
 	opacity: 0.5;
 }
+
+/* Sixth section end */
 
 @media screen and (max-width: 375px) {
 
@@ -849,13 +854,161 @@ html, body {
 
 /* Second section end */
 
+/* Third section start */
+
+.thirdContent {
+	width: 88%;
+	height: 100vh;
+	margin: 0 auto 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+.leftContent {
+	width: 100%;
+	margin-top: 0;
+}
+
+.rightContent {
+	margin-top: 0;
+	margin-left: 0;
+	align-items: center;
+	justify-content: center;
+}
+
+.divoviNeki {
+	width: 15px;
+	height: 15px;
+	margin: 5px 15px 5px 0;
+	
+}
+.export {
+	width: 15px;
+	height: 15px;
+	margin: 5px 15px 5px 0;
+}
+.prvaDva{
+	margin: 0 25px 0 0;
+}
+.drugaDva{
+	margin: 0 0 0 25px;
+}
+
+.rightContent p {
+	font-size: 16px;
+	word-spacing: 23;
+}
+
+/* Third section end */
+
+/* Fifth section start */
+
+.fifthTitle h1{
+	font-size: 36px;
+	word-spacing: 14;
+}
+
+.fifthTitle p {
+	font-size: 18px;
+	letter-spacing: 10;
+	word-spacing: 14;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	font-size: 16px;
+	letter-spacing: 10;
+	word-spacing: 28;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	font-size: 16px;
+	letter-spacing: 10;
+	word-spacing: 28; 
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+	font-size: 16px;
+	letter-spacing: 10;
+	word-spacing: 14; 
+}
+
+.inputForm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 78px 20% 39px 20%;
+
+}
+.inputForm .input {
+	flex: 0 0 50%;
+	height: 55px;
+	margin-right: 0;
+}
+.inputForm .submit {
+	flex: 0 0 50%;
+	height: 47px;
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+.inputForm .submit:hover {
+	height: 47px;
+	font-size: 16px;
+	letter-spacing: 0.4;
+}
+.facebookDiv p{
+	font-family: Poppins;
+	font-size: 20px;
+	font-style: normal;
+
+}
+.instagramDiv p{
+	font-family: Poppins;
+	font-size: 20px;
+	font-style: normal;
+
+}
+.fa {
+  padding: 10px;
+  font-size: 26px;
+  margin: 0px 0px;
+}
+
+/* Fifth section end */
+
+/* Sixth section start */
+
+.samoLogo {
+	flex: 0 0 30%;
+	display: flex;
+}
+.samoLogo img {
+	margin-top: 65px;
+}
+
+.prvi h3 {
+	font-size: 20px;
+
+}
+
+.prvi p {
+	font-size: 14px;
+	margin-top: 28px;
+
+}
+.footer p {
+	font-size: 16px;
+}
+
+/* Sixth section end */
+
 
 }
 
 @media screen and (max-width: 425px) and (min-width: 376px){
 	/* First section start*/
+
 	.logo {
-		padding: 0 40px;
+		padding: 6px 40px;
 	}
 	
 	.checkbtn {
@@ -994,13 +1147,160 @@ html, body {
 }
 
 /* Second section end */
+
+/* Third section start */
+
+.thirdContent {
+	width: 88%;
+	height: 100vh;
+	margin: 0 auto 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+.leftContent {
+	width: 100%;
+	margin-top: 0;
+}
+
+.rightContent {
+	margin-top: 0;
+	margin-left: 0;
+	align-items: center;
+	justify-content: center;
+}
+
+.divoviNeki {
+	width: 15px;
+	height: 15px;
+	margin: 5px 15px 5px 0;
+	
+}
+.export {
+	width: 15px;
+	height: 15px;
+	margin: 5px 15px 5px 0;
+}
+.prvaDva{
+	margin: 0 25px 0 0;
+}
+.drugaDva{
+	margin: 0 0 0 25px;
+}
+
+.rightContent p {
+	font-size: 16px;
+	word-spacing: 23;
+}
+
+/* Third section end */
+
+/* Fifth section start */
+
+.fifthTitle h1{
+	font-size: 36px;
+	word-spacing: 14;
+}
+
+.fifthTitle p {
+	font-size: 18px;
+	letter-spacing: 10;
+	word-spacing: 14;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	font-size: 16px;
+	letter-spacing: 10;
+	word-spacing: 28;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	font-size: 16px;
+	letter-spacing: 10;
+	word-spacing: 28; 
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+	font-size: 16px;
+	letter-spacing: 10;
+	word-spacing: 14; 
+}
+
+.inputForm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 78px 20% 39px 20%;
+
+}
+.inputForm .input {
+	flex: 0 0 50%;
+	height: 55px;
+	margin-right: 0;
+}
+.inputForm .submit {
+	flex: 0 0 50%;
+	height: 47px;
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+.inputForm .submit:hover {
+	height: 47px;
+	font-size: 16px;
+	letter-spacing: 0.4;
+}
+.facebookDiv p{
+	font-family: Poppins;
+	font-size: 20px;
+	font-style: normal;
+
+}
+.instagramDiv p{
+	font-family: Poppins;
+	font-size: 20px;
+	font-style: normal;
+
+}
+.fa {
+  padding: 10px;
+  font-size: 26px;
+  margin: 0px 0px;
+}
+
+/* Fifth section end */
+
+/* Sixth section start */
+
+.samoLogo {
+	flex: 0 0 30%;
+	display: flex;
+}
+.samoLogo img {
+	margin-top: 65px;
+}
+
+.prvi h3 {
+	font-size: 20px;
+
+}
+
+.prvi p {
+	font-size: 14px;
+	margin-top: 28px;
+
+}
+.footer p {
+	font-size: 16px;
+}
+
+/* Sixth section end */
 }
 
 @media screen and (max-width: 600px) and (min-width: 426px) {
 	/* First section start*/
 	.logo {
 		margin-top: 1em;
-		padding: 0 60px;
+		padding: 6px 60px;
 	}
 	nav ul li a {
 		font-size: 16px;
@@ -1142,13 +1442,160 @@ html, body {
 }
 
 /* Second section end */
+
+/* Third section start */
+
+.thirdContent {
+	width: 88%;
+	height: 100vh;
+	margin: 0 auto 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+.leftContent {
+	width: 100%;
+	margin-top: 0;
+}
+
+.rightContent {
+	margin-top: 0;
+	margin-left: 0;
+	align-items: center;
+	justify-content: center;
+}
+
+.divoviNeki {
+	width: 15px;
+	height: 15px;
+	margin: 5px 15px 5px 0;
+	
+}
+.export {
+	width: 15px;
+	height: 15px;
+	margin: 5px 15px 5px 0;
+}
+.prvaDva{
+	margin: 0 25px 0 0;
+}
+.drugaDva{
+	margin: 0 0 0 25px;
+}
+
+.rightContent p {
+	font-size: 16px;
+	word-spacing: 23;
+}
+
+/* Third section end */
+
+/* Fifth section start */
+
+.fifthTitle h1{
+	font-size: 36px;
+	word-spacing: 14;
+}
+
+.fifthTitle p {
+	font-size: 18px;
+	letter-spacing: 10;
+	word-spacing: 14;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	font-size: 16px;
+	letter-spacing: 10;
+	word-spacing: 28;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	font-size: 16px;
+	letter-spacing: 10;
+	word-spacing: 28; 
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+	font-size: 16px;
+	letter-spacing: 10;
+	word-spacing: 14; 
+}
+
+.inputForm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 78px 20% 39px 20%;
+
+}
+.inputForm .input {
+	flex: 0 0 50%;
+	height: 55px;
+	margin-right: 0;
+}
+.inputForm .submit {
+	flex: 0 0 50%;
+	height: 47px;
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+.inputForm .submit:hover {
+	height: 47px;
+	font-size: 16px;
+	letter-spacing: 0.4;
+}
+.facebookDiv p{
+	font-family: Poppins;
+	font-size: 20px;
+	font-style: normal;
+
+}
+.instagramDiv p{
+	font-family: Poppins;
+	font-size: 20px;
+	font-style: normal;
+
+}
+.fa {
+  padding: 10px;
+  font-size: 26px;
+  margin: 0px 0px;
+}
+
+/* Fifth section end */
+
+/* Sixth section start */
+
+.samoLogo {
+	flex: 0 0 30%;
+	display: flex;
+}
+.samoLogo img {
+	margin-top: 65px;
+}
+
+.prvi h3 {
+	font-size: 20px;
+
+}
+
+.prvi p {
+	font-size: 14px;
+	margin-top: 28px;
+
+}
+.footer p {
+	font-size: 16px;
+}
+
+/* Sixth section end */
 }
 
 @media screen and (max-width: 768px) and (min-width: 601px) {
 	/* First section start*/
 	.logo {
 		margin-top: 1em;
-		padding: 0 80px;
+		padding: 6px 80px;
 	}
 	nav ul li a {
 		font-size: 16px;
@@ -1280,6 +1727,153 @@ html, body {
 }
 
 /* Second section end */
+
+/* Third section start */
+
+.thirdContent {
+	width: 88%;
+	height: 100vh;
+	margin: 0 auto 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+.leftContent {
+	width: 100%;
+	margin-top: 0;
+}
+
+.rightContent {
+	margin-top: 0;
+	margin-left: 0;
+	align-items: center;
+	justify-content: center;
+}
+
+.divoviNeki {
+	width: 15px;
+	height: 15px;
+	margin: 25px 15px 5px 0;
+	
+}
+.export {
+	width: 15px;
+	height: 15px;
+	margin: 25px 15px 5px 0;
+}
+.prvaDva{
+	margin: 0 55px 0 0;
+}
+.drugaDva{
+	margin: 0 0 0 55px;
+}
+
+.rightContent p {
+	font-size: 16px;
+	word-spacing: 23;
+}
+
+/* Third section end */
+
+/* Fifth section start */
+
+.fifthTitle h1{
+	font-size: 36px;
+	word-spacing: 14;
+}
+
+.fifthTitle p {
+	font-size: 18px;
+	letter-spacing: 10;
+	word-spacing: 14;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	font-size: 16px;
+	letter-spacing: 10;
+	word-spacing: 28;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	font-size: 16px;
+	letter-spacing: 10;
+	word-spacing: 28; 
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+	font-size: 16px;
+	letter-spacing: 10;
+	word-spacing: 14; 
+}
+
+.inputForm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 78px 20% 39px 20%;
+
+}
+.inputForm .input {
+	flex: 0 0 50%;
+	height: 55px;
+	margin-right: 0;
+}
+.inputForm .submit {
+	flex: 0 0 50%;
+	height: 47px;
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+.inputForm .submit:hover {
+	height: 47px;
+	font-size: 16px;
+	letter-spacing: 0.4;
+}
+.facebookDiv p{
+	font-family: Poppins;
+	font-size: 20px;
+	font-style: normal;
+
+}
+.instagramDiv p{
+	font-family: Poppins;
+	font-size: 20px;
+	font-style: normal;
+
+}
+.fa {
+  padding: 10px;
+  font-size: 26px;
+  margin: 0px 0px;
+}
+
+/* Fifth section end */
+
+/* Sixth section start */
+
+.samoLogo {
+	flex: 0 0 30%;
+	display: flex;
+}
+.samoLogo img {
+	margin-top: 65px;
+}
+
+.prvi h3 {
+	font-size: 20px;
+
+}
+
+.prvi p {
+	font-size: 14px;
+	margin-top: 28px;
+
+}
+.footer p {
+	font-size: 16px;
+}
+
+/* Sixth section end */
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
@@ -1397,7 +1991,7 @@ html, body {
 
 .logo {
 	margin-top: 3em;
-	padding: 0 100px;
+	padding: 6px 100px;
 }
 .nav ul li {
 	display: inline-block;
